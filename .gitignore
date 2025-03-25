@@ -1,0 +1,13 @@
+# Mac DS_Store
+**/.DS_Store
+
+# Venvs
+venvteste39/
+
+# Datasets
+datasets/
+
+# Model weights, logs, checkpoints
+logs/
+model_weights_by_hour/
+Train_method*
