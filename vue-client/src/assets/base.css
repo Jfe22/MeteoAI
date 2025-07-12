@@ -1,0 +1,68 @@
+/* color palette  */
+:root {
+  --vt-c-white: #f3f3e0;
+  --vt-c-sand: #dda853;
+  --vt-c-blue: #27548a;
+  --vt-c-darkblue: #2c3e50;
+
+  --vt-c-warning-green: #6aa84f;
+  --vt-c-warning-yellow: #f1c232;
+  --vt-c-warning-orange: #e69138;
+  --vt-c-warning-red: #cc0000;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-text: var(--vt-c-darkblue);
+
+  --color-border: var(--vt-c-darkblue);
+  --color-border-hover: var(--vt-c-blue);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-darkblue);
+    --color-text: var(--vt-c-white);
+
+    --color-border: var(--vt-c-sand);
+    --color-border-hover: var(--vt-c-blue);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
