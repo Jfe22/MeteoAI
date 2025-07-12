@@ -12,3 +12,15 @@ datasets/
 logs/
 model_weights_by_hour/
 Train_method*
+
+# PSJ Method
+Network-Training/psj.py
+
+# Node modules
+vue-client/node_modules
+
+# Datasets
+Dataset-Construction/precipitation_dataset
+Dataset-Construction/rawdata
+
+
